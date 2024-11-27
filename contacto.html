@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfest - Contacto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Techfest</a></li>
+            <li><a href="charlas.html">Charlas</a></li>
+            <li><a href="talleres.html">Talleres</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contacto">
+            <br><br>
+            <h2>Contacto</h2>
+            <br><br>
+            <div class="row">
+                <div class="cols-4">
+                    <div class="cuadrado naranja">
+                        <i class="fa-regular fa-envelope"></i><br>
+                        <p>info@techfest.com<br>ponentes@techfest.com</p>
+                    </div>
+                </div>
+                <div class="cols-4">
+                    <div class="cuadrado cian">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+34 654 56 56 56<br>+34 683 76 76 76</p>
+                    </div>
+                </div>
+                <div class="cols-4">
+                    <div class="cuadrado verde">
+                        <i class="fa-solid fa-location-dot"></i><br>
+                        <p>Calle Mayor, 32<br>(Albacete, España)</p>
+                    </div>
+                </div>
+                <div class="cols-4">
+                    <div class="cuadrado morado">
+                        <i class="fa-regular fa-clock"></i><br>
+                        <p>Lunes a Viernes<br>08:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+             <div class="row">
+                <div class="cols-2">
+                    <img src="img/contact.jpg">
+                </div>
+                <div class="cols-2">
+                    <h3>Formulario de Contacto</h3>
+                    <br><br><br>
+                    <form action="/enviar.php" method="post">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        &nbsp;
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        <br><br>
+                        <input type="text" class="correo" id="correo" name="correo" placeholder="Correo" required>
+                        <br><br>
+                        <input type="date" id="fecha" name="fecha" required>
+                        &nbsp;
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-789">
+                        <br><br>
+                    
+                        <select id="consulta" name="consulta" required>
+                            <option value="compra">Comprar entradas</option>
+                            <option value="informacion">Consultar información</option>
+                            <option value="sugerencia">Comentarios y sugerencias</option>
+                            <option value="reclamaciones">Quejas y reclamaciones</option>
+                        </select>
+                        <br><br>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="10" cols="55" required></textarea>
+                        <br><br><br>
+                        <button type="submit" class="botonVerde">Enviar</button>
+                        <button type="reset" class="botonRojo">Borrar</button>
+                    </form>
+                </div>
+
+             </div>
+             <br><br>
+             <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.9608015499043!2d-1.85800158818183!3d38.99339097158573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd665fc0a4383d4b%3A0xf419ce612adeb89f!2sC.%20Mayor%2C%2032%2C%2002001%20Albacete!5e0!3m2!1ses!2ses!4v1729981596281!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <br><br><br><br>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="mailto:info@learncode.es" target="_blank"><i class="fa-solid fa-envelope gradient-icon"></i></a></li>
+                <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter gradient-icon"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f gradient-icon"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram gradient-icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in gradient-icon"></i></a></li>
+                <li><a href="https://www.github.com/learncode-dev/" target="_blank"><i class="fa-brands fa-github gradient-icon"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 - LearnCode. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>

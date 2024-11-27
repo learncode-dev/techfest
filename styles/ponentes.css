@@ -1,0 +1,170 @@
+.row-ct {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.col1-ct {
+    width: 20%;
+    padding: 20px;
+    position: relative;
+}
+
+.col1-ct img {
+    opacity: 1;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle-ct {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 52%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre-ct {
+    font-family: "Silkscreen", sans-serif;
+    color: white;
+    font-size: calc(1.5vw + 3px);
+    max-width: 100%;
+    text-align: center;
+}
+
+.icons-ct {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-ct img {
+    padding: 3px;
+    width: 50px;
+    transition: transform .5 ease;
+    opacity: 1 !important;
+}
+
+.icons-ct img:hover {
+    transform: scale(1.5);
+    opacity: 1 !important;
+}
+
+.col1-ct:hover img {
+    opacity: 0.1;
+}
+
+.col1-ct:hover .middle-ct {
+    opacity: 1;
+}
+
+.col2-ct {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-ponente {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: "Silkscreen", sans-serif;
+    font-style: normal;
+    font-size: calc(1.5vw + 2px);
+    color: white;
+    text-align: justify;
+}
+
+.descripcion-ponente {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-size: calc(0.8vw + 1px);
+    color: white;
+    text-align: justify;
+}
+
+.footer-ponente {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #262626;
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-size: calc(0.5vw + 3px);
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.footer-ponente img {
+    margin-right: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #cecece;
+    width: 90%;
+    margin: 0 auto;
+}
+
+i {
+    font-size: 20px;
+    padding: 5px 15px 5px 5px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .row-ct {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col1-ct {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col2-ct {
+        width: 100%;
+    }
+
+    .nombre-ct {
+        font-size: 30px;
+    }
+
+    .titulo-ponente {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .descripcion-ponente {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .footer-ponente {
+        padding: 5px;
+        font-size: 10px;
+    }
+}

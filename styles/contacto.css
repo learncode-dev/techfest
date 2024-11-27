@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Lobster&family=Montserrat&family=Roboto&family=Silkscreen&family=Space+Mono&display=swap');
+
+/* Cuadrados */
+.cols-4 {
+    width: 25%;
+    padding: 10px;
+}
+
+.cuadrado {
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow .5s ease;
+}
+
+.cuadrado:hover {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.9);
+    animation: mymove .5s ease;
+}
+
+@keyframes mymove {
+  0%   {transform: scale(1.0);}
+  50%  {transform: scale(0.9);}
+  100% {transform: scale(1.0);}
+
+}
+
+.cuadrado i {
+    font-size: 5vw;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    transition: transform .5s ease;
+}
+
+.cuadrado i:hover {
+    transform: scale(1.2);
+}
+
+.naranja {background-color: #D96F1D}
+.cian {background-color: #098A98}
+.verde {background-color: #89E659}
+.morado {background-color: #CC6CDB}
+
+.cuadrado p {
+    font-family: "Space Mono", monospace;
+    font-size: 1vw;
+    color: white;
+}
+
+.row {
+    align-items: center;
+}
+
+.cols-2 {
+    width: 50%;
+    padding: 10px;
+}
+
+.cols-2 img {
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .5s ease;
+}
+
+.cols-2 img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Inputs */
+input {
+    font-family: "Montserrat", sans-serif;
+    width: 49%;
+    padding: 10px;
+    border: 3px solid rgba(32, 172, 200, 0.0);
+    border-radius: 15px;
+    transition: border .5s ease;
+}
+
+.correo {
+    width: 100%;
+}
+
+select {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid rgba(32, 172, 200, 0.0);
+    border-radius: 15px;
+    transition: border .5s ease;
+}
+
+textarea {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid rgba(32, 172, 200, 0.0);
+    border-radius: 15px;
+    transition: border .5s ease;
+}
+
+input:hover, input:focus {
+    border: 3px solid rgba(32, 172, 200, 1.0) !important;
+    outline: none;
+}
+
+select:hover, select:focus {
+    border: 3px solid rgba(32, 172, 200, 1.0) !important;
+    outline: none;
+}
+
+textarea:hover, textarea:focus {
+    border: 3px solid rgba(32, 172, 200, 1.0) !important;
+    outline: none;
+}
+
+
+/* Botones */
+button {
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    padding: 13px 0;
+    margin: 0 5px;
+    width: 48%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: background-color .5s ease, transform .5s ease;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.botonRojo {background-color: #FF8486}
+.botonVerde{background-color: #9ED488}
+.botonRojo:hover {background-color: #FF5D5F}
+.botonVerde:hover {background-color: #79D454}
+
+/* Mapa */
+.googleMap {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .cols-2, .cols-4 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .cuadrado p {
+        font-size: 12px;
+    }
+
+    .cols-2 img {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .googleMap {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1303px) {
+
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    select {
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
