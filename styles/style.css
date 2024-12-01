@@ -257,6 +257,7 @@ footer {
     justify-content: center;
     align-items: flex-end;
     color:#fff;
+    font-size: 1.2vw;
 }
 
 /* MEDIA */
@@ -279,6 +280,20 @@ footer {
     nav li a {
         padding: 10px;
         text-align: left;
+    }
+
+    /* Generales */
+
+    h2 {
+        font-size: 40px;
+    }
+  
+    h3 {
+        font-size: 25px;
+    }
+  
+    h4 {
+        font-size: 15px;
     }
     
     /* Inicio */
@@ -314,5 +329,17 @@ footer {
         width: 100%;
         display: block;
         margin-bottom: 20px;
+    }
+
+    .nombre {
+        font-size: 30px;
+    }
+    
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }

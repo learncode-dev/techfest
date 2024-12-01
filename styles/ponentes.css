@@ -145,6 +145,20 @@ i {
         justify-content: center;
     }
 
+    .col1-ct img {
+        max-width: 75%;
+        margin: auto;
+    }
+    
+    .middle-ct {
+        top: 50%;
+        left: 50%;
+    }
+
+    .icons-ct i {
+        font-size: 25px;
+    }
+
     .col2-ct {
         width: 100%;
     }
@@ -166,5 +180,8 @@ i {
     .footer-ponente {
         padding: 5px;
         font-size: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
