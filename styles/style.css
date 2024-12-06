@@ -15,10 +15,17 @@ header {
     height: calc(100vh - 45px);
 }
 
-nav, .nav2 {
+nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+}
+
+.nav2 {
+    position: sticky;
+    top: 50px;
+    z-index: 999;
     width: 100%;
 }
 
@@ -266,6 +273,10 @@ footer {
 @media only screen and (max-width: 599px) {
     nav, .nav2 {
         position: relative;
+    }
+
+    .nav2 {
+        top: 0;
     }
 
     nav ul, .nav2 ul {
