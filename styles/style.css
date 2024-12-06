@@ -15,24 +15,26 @@ header {
     height: calc(100vh - 45px);
 }
 
-nav {
+nav, .nav2 {
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
 }
 
-nav ul {
-    background-color: #262626;
+nav ul, .nav2 ul {
     list-style-type: none;
     overflow: hidden;
 }
 
-nav li {
+nav ul {background-color: #262626}
+.nav2 ul {background-color: #2E2E2E}
+
+nav li, .nav2 li {
     float: left;
 }
 
-nav li a {
+nav li a, .nav2 li a {
     font-family: "Silkscreen", sans-serif;
     font-style: normal;
     display: block;
@@ -43,7 +45,7 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
+nav li a:hover, .nav2 li a:hover {
     background-color: #111;
     font-weight: bold;
 }
@@ -262,22 +264,22 @@ footer {
 
 /* MEDIA */
 @media only screen and (max-width: 599px) {
-    nav {
+    nav, .nav2 {
         position: relative;
     }
 
-    nav ul {
+    nav ul, .nav2 ul {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
 
-    nav li {
+    nav li, .nav2 li {
         float: none;
         width: 100%;
     }
 
-    nav li a {
+    nav li a, .nav2 li a {
         padding: 10px;
         text-align: left;
     }
